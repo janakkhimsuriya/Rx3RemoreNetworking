@@ -1,5 +1,7 @@
 # Rx3AndroidNetworking
 
+[![](https://jitpack.io/v/janakkhimsuriya/Rx3AndroidNetworking.svg)](https://jitpack.io/#janakkhimsuriya/Rx3AndroidNetworking)
+
 ### About Rx3AndroidNetworking Library
 Rx3AndroidNetworking Library is a powerful library for doing any type of networking in Android applications which is made on top of OkHttp Networking Layer.
 
