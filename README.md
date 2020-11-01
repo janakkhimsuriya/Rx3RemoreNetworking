@@ -39,7 +39,7 @@ allprojects {
 
 dependencies {
     implementation "com.squareup.okhttp3:okhttp:4.4.0"
-    implementation 'com.github.JanakBca1992:Rx3AndroidNetworking:1.0.0'
+    implementation 'com.github.janakkhimsuriya:Rx3RemoreNetworking:SNAPSHOT'
 }
 ```
 Do not forget to add internet permission in manifest if already not present
