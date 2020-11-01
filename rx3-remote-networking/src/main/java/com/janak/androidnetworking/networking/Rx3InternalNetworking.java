@@ -1,7 +1,6 @@
 package com.janak.androidnetworking.networking;
 
 import android.net.TrafficStats;
-import android.telecom.Call;
 
 import com.janak.androidnetworking.common.ANConstants;
 import com.janak.androidnetworking.common.ANResponse;
@@ -24,6 +23,20 @@ import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.exceptions.CompositeException;
 import io.reactivex.rxjava3.exceptions.Exceptions;
 import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import okhttp3.Call;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
+import static com.janak.androidnetworking.common.Method.DELETE;
+import static com.janak.androidnetworking.common.Method.GET;
+import static com.janak.androidnetworking.common.Method.HEAD;
+import static com.janak.androidnetworking.common.Method.OPTIONS;
+import static com.janak.androidnetworking.common.Method.PATCH;
+import static com.janak.androidnetworking.common.Method.POST;
+import static com.janak.androidnetworking.common.Method.PUT;
 
 @SuppressWarnings("ALL")
 public class Rx3InternalNetworking {

@@ -1,11 +1,11 @@
-package com.janak.rx3androidnetworking;
+package com.janak.androidnetworking.networking;
 
-public class Rx3AndroidNetworking {
+public class Rx3RemoteNetworking {
 
     /**
      * private constructor to prevent instantiation of this class
      */
-    private Rx3AndroidNetworking() {
+    private Rx3RemoteNetworking() {
     }
 
     /**
