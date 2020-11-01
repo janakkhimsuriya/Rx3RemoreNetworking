@@ -2,12 +2,12 @@ package com.janak.rx3androidnetworking;
 
 import android.graphics.Bitmap;
 
-import com.androidnetworking.common.ANRequest;
-import com.androidnetworking.common.Method;
-import com.androidnetworking.common.RequestType;
-import com.androidnetworking.common.ResponseType;
 import com.google.gson.internal.$Gson$Types;
 import com.google.gson.reflect.TypeToken;
+import com.janak.androidnetworking.common.ANRequest;
+import com.janak.androidnetworking.common.Method;
+import com.janak.androidnetworking.common.RequestType;
+import com.janak.androidnetworking.common.ResponseType;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

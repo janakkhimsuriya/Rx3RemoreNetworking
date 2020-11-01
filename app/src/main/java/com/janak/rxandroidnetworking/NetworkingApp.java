@@ -2,6 +2,8 @@ package com.janak.rxandroidnetworking;
 
 import android.app.Application;
 
+import com.janak.androidnetworking.AndroidNetworking;
+
 public class NetworkingApp extends Application {
 
     @Override
@@ -16,6 +18,7 @@ public class NetworkingApp extends Application {
 
         */
 
-        //AndroidNetworking.initialize(getApplicationContext());
+        AndroidNetworking.initialize(getApplicationContext());
+
     }
 }

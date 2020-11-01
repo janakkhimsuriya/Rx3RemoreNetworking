@@ -1,22 +1,20 @@
 package com.janak.rx3androidnetworking;
 
 import android.net.TrafficStats;
+import android.telecom.Call;
 
-import com.androidnetworking.common.ANConstants;
-import com.androidnetworking.common.ANResponse;
-import com.androidnetworking.common.ConnectionClassManager;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.internal.InternalNetworking;
-import com.androidnetworking.internal.RequestProgressBody;
-import com.androidnetworking.internal.ResponseProgressBody;
-import com.androidnetworking.utils.SourceCloseUtil;
-import com.androidnetworking.utils.Utils;
 
+import com.janak.androidnetworking.common.ANConstants;
+import com.janak.androidnetworking.common.ANResponse;
+import com.janak.androidnetworking.common.ConnectionClassManager;
+import com.janak.androidnetworking.error.ANError;
+import com.janak.androidnetworking.internal.InternalNetworking;
+import com.janak.androidnetworking.internal.RequestProgressBody;
+import com.janak.androidnetworking.internal.ResponseProgressBody;
+import com.janak.androidnetworking.utils.SourceCloseUtil;
+import com.janak.androidnetworking.utils.Utils;
 
 import org.jetbrains.annotations.NotNull;
-
-import okhttp3.Call;
-import okhttp3.Request;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,18 +25,6 @@ import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.exceptions.CompositeException;
 import io.reactivex.rxjava3.exceptions.Exceptions;
 import io.reactivex.rxjava3.plugins.RxJavaPlugins;
-import okhttp3.Interceptor;
-import okhttp3.OkHttpClient;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-
-import static com.androidnetworking.common.Method.DELETE;
-import static com.androidnetworking.common.Method.GET;
-import static com.androidnetworking.common.Method.HEAD;
-import static com.androidnetworking.common.Method.OPTIONS;
-import static com.androidnetworking.common.Method.PATCH;
-import static com.androidnetworking.common.Method.POST;
-import static com.androidnetworking.common.Method.PUT;
 
 @SuppressWarnings("ALL")
 public class Rx3InternalNetworking {

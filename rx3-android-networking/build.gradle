@@ -36,5 +36,5 @@ dependencies {
 
     implementation 'org.jetbrains:annotations:15.0'
 
-    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation project(':android-networking')
 }
