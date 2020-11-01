@@ -61,5 +61,5 @@ AndroidNetworking.initialize(getApplicationContext(),okHttpClient);
 
 ### Contact - Let's become friend
 - [Twitter](https://twitter.com/Jashita9293)
-- [Github](https://github.com/JanakBca1992)
+- [Github](https://github.com/janakkhimsuriya)
 - [Facebook](https://www.facebook.com/khimsuriya.janak)
