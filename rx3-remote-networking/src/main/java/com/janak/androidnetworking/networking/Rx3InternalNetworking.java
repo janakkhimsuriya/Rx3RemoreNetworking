@@ -1,8 +1,7 @@
-package com.janak.rx3androidnetworking;
+package com.janak.androidnetworking.networking;
 
 import android.net.TrafficStats;
 import android.telecom.Call;
-
 
 import com.janak.androidnetworking.common.ANConstants;
 import com.janak.androidnetworking.common.ANResponse;

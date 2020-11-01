@@ -1,4 +1,4 @@
-package com.janak.rx3androidnetworking;
+package com.janak.androidnetworking.networking;
 
 import android.graphics.Bitmap;
 

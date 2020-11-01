@@ -1,4 +1,3 @@
-include ':android-networking'
-/*include ':rx3-android-networking'*/
+include ':rx3-remote-networking'
 include ':app'
 rootProject.name = "RxAndroidNetworking"
