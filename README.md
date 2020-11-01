@@ -1,13 +1,13 @@
-# Rx3AndroidNetworking
+# Rx3RemoreNetworking
 
 [![](https://jitpack.io/v/janakkhimsuriya/Rx3AndroidNetworking.svg)](https://jitpack.io/#janakkhimsuriya/Rx3AndroidNetworking)
 
-### About Rx3AndroidNetworking Library
-Rx3AndroidNetworking Library is a powerful library for doing any type of networking in Android applications which is made on top of OkHttp Networking Layer.
+### About Rx3RemoreNetworking Library
+Rx3RemoreNetworking Library is a powerful library for doing any type of networking in Android applications which is made on top of OkHttp Networking Layer.
 
-Rx3AndroidNetworking Library takes care of each and everything. So you don't have to do anything, just make request and listen for the response.
+Rx3RemoreNetworking Library takes care of each and everything. So you don't have to do anything, just make request and listen for the response.
 
-### Why use Rx3AndroidNetworking ?
+### Why use Rx3RemoreNetworking ?
 * Recent removal of HttpClient in Android Marshmallow(Android M) made other networking libraries obsolete.
 * No other single library does each and everything like making request, downloading any type of file, uploading file, loading
   image from network in ImageView, etc. There are some libraries but they are outdated.
@@ -21,12 +21,12 @@ Rx3AndroidNetworking Library takes care of each and everything. So you don't hav
 
 ## Requirements
 
-Rx3AndroidNetworking Library can be included in any Android application. 
+Rx3RemoreNetworking Library can be included in any Android application. 
 
-Rx3AndroidNetworking Library supports Android 2.3 (Gingerbread) and later. 
+Rx3RemoreNetworking Library supports Android 2.3 (Gingerbread) and later. 
 
 
-## Using Rx3AndroidNetworking Library in your application
+## Using Rx3RemoreNetworking Library in your application
 
 Add this in your build.gradle
 ```groovy
