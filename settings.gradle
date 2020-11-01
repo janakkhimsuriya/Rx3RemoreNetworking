@@ -1,0 +1,3 @@
+include ':rx3-android-networking'
+include ':app'
+rootProject.name = "RxAndroidNetworking"
