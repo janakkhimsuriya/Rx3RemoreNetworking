@@ -20,11 +20,11 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
-def siteUrl = 'https://github.com/JanakBca1992/Rx3AndroidNetworking'
-def gitUrl = 'hhttps://github.com/JanakBca1992/Rx3AndroidNetworking.git'
+def siteUrl = 'https://github.com/janakkhimsuriya/Rx3RemoreNetworking'
+def gitUrl = 'https://github.com/janakkhimsuriya/Rx3RemoreNetworking.git'
 
-group = "com.janak.android"
-version = '1.0.0'
+group = "com.github.janakkhimsuriya"
+version = '0.0.7'
 
 install {
     repositories.mavenInstaller {
@@ -45,7 +45,7 @@ install {
 
             developers {
                 developer {
-                    id 'JanakBca1992'
+                    id 'janakkhimsuriya'
                     name 'Janak Khimsuriya'
                     email 'janakbca2013@gmail.com'
                 }
