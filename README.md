@@ -8,7 +8,7 @@ Rx3RemoreNetworking Library is a powerful library for doing any type of networki
 Rx3RemoreNetworking Library takes care of each and everything. So you don't have to do anything, just make request and listen for the response.
 
 ### Why use Rx3RemoreNetworking ?
-* Recent removal of HttpClient in Android Marshmallow(Android M) made other networking libraries obsolete.
+* Removal of HttpClient in Android Marshmallow(Android M) made other networking libraries obsolete.
 * No other single library does each and everything like making request, downloading any type of file, uploading file, loading
   image from network in ImageView, etc. There are some libraries but they are outdated.
 * No other library provides simple interface for doing all types of things in networking like setting priority, cancelling, etc.
@@ -23,7 +23,7 @@ Rx3RemoreNetworking Library takes care of each and everything. So you don't have
 
 Rx3RemoreNetworking Library can be included in any Android application. 
 
-Rx3RemoreNetworking Library supports Android 2.3 (Gingerbread) and later. 
+Rx3RemoreNetworking Library supports Android 4.1 (Jelly Bean) and later. 
 
 
 ## Using Rx3RemoreNetworking Library in your application
