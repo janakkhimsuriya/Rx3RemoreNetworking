@@ -23,7 +23,7 @@ Rx3RemoreNetworking Library takes care of each and everything. So you don't have
 
 Rx3RemoreNetworking Library can be included in any Android application. 
 
-Rx3RemoreNetworking Library supports Android 2.3 (Gingerbread) and later. 
+Rx3RemoreNetworking Library supports Android 4.1 (Jelly Bean) and later. 
 
 
 ## Using Rx3RemoreNetworking Library in your application
