@@ -3,10 +3,12 @@ package com.janak.rxandroidnetworking;
 import android.app.Application;
 
 import com.janak.androidnetworking.AndroidNetworking;
-import com.janak.androidnetworking.HttpClientBuilder;
 import com.janak.androidnetworking.interceptors.HttpLoggingInterceptor;
+import com.janak.androidnetworking.interceptors.curl.CurlLoggerInterceptor;
 
 import java.util.concurrent.TimeUnit;
+
+import okhttp3.OkHttpClient;
 
 public class NetworkingApp extends Application {
 
@@ -14,13 +16,13 @@ public class NetworkingApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        HttpClientBuilder.Builder httpClientBuilder = new HttpClientBuilder.Builder()
+        OkHttpClient httpClientBuilder = new OkHttpClient.Builder()
                 .readTimeout(2, TimeUnit.MINUTES)
                 .connectTimeout(5, TimeUnit.MINUTES)
                 .writeTimeout(5, TimeUnit.MINUTES)
-                .setCurlInterceptor();
+                .addInterceptor(new CurlLoggerInterceptor()).build();
 
-        AndroidNetworking.initialize(this, httpClientBuilder.build());
+        AndroidNetworking.initialize(this, httpClientBuilder);
 
         if (BuildConfig.DEBUG) {
             AndroidNetworking.enableLogging(HttpLoggingInterceptor.Level.NONE);

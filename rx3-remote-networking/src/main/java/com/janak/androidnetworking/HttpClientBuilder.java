@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 
-public class HttpClientBuilder {
+class HttpClientBuilder {
 
     private OkHttpClient okHttpClient;
 
