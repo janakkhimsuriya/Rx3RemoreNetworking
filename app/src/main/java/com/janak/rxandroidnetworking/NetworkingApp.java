@@ -5,6 +5,7 @@ import android.app.Application;
 import com.janak.androidnetworking.AndroidNetworking;
 import com.janak.androidnetworking.interceptors.HttpLoggingInterceptor;
 import com.janak.androidnetworking.interceptors.curl.CurlLoggerInterceptor;
+import com.janak.androidnetworking.jacksonparserfactory.JacksonParserFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,13 +17,14 @@ public class NetworkingApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        OkHttpClient httpClientBuilder = new OkHttpClient.Builder()
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(2, TimeUnit.MINUTES)
                 .connectTimeout(5, TimeUnit.MINUTES)
                 .writeTimeout(5, TimeUnit.MINUTES)
                 .addInterceptor(new CurlLoggerInterceptor()).build();
 
-        AndroidNetworking.initialize(this, httpClientBuilder);
+        AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
+        AndroidNetworking.setParserFactory(new JacksonParserFactory());
 
         if (BuildConfig.DEBUG) {
             AndroidNetworking.enableLogging(HttpLoggingInterceptor.Level.NONE);

@@ -39,5 +39,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation project(':rx3-remote-networking')
-    //implementation 'com.github.janakkhimsuriya:Rx3RemoreNetworking:0.0.4'
+    //implementation 'com.github.janakkhimsuriya:Rx3RemoreNetworking:0.0.5'
 }
