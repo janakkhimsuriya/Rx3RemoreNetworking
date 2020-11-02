@@ -60,7 +60,12 @@ OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .addInterceptor(new CurlLoggerInterceptor()).build();
                 
 AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
+```
 
+Using the Fast Android Networking with Jackson Parser
+```java
+// Set the JacksonParserFactory like below
+AndroidNetworking.setParserFactory(new JacksonParserFactory());
 ```
 
 ### Contact - Let's become friend
