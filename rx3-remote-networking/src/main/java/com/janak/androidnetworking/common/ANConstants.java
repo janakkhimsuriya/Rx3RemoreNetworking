@@ -30,7 +30,7 @@ public final class ANConstants {
     public static final String REQUEST_CANCELLED_ERROR = "requestCancelledError";
     public static final String PARSE_ERROR = "parseError";
     public static final String PREFETCH = "prefetch";
-    public static final String FAST_ANDROID_NETWORKING = "FastAndroidNetworking";
+    public static final String RX3_REMOTE_NETWORKING = "Rx3RemoteNetworking";
     public static final String USER_AGENT = "User-Agent";
     public static final String SUCCESS = "success";
     public static final String OPTIONS = "OPTIONS";
