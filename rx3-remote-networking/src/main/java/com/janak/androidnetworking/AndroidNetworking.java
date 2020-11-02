@@ -69,6 +69,20 @@ public class AndroidNetworking {
      * Initializes AndroidNetworking with the specified config.
      *
      * @param context      The context
+     * @param okHttpClient The Customised okHttpClient
+     */
+    public static void initialize(Context context, HttpClientBuilder httpClientBuilder) {
+        if (httpClientBuilder != null && httpClientBuilder.getOkHttpClient() != null) {
+            initialize(context, httpClientBuilder.getOkHttpClient());
+        } else {
+            initialize(context);
+        }
+    }
+
+    /**
+     * Initializes AndroidNetworking with the specified config.
+     *
+     * @param context      The context
      * @param okHttpClient The okHttpClient
      */
     public static void initialize(Context context, OkHttpClient okHttpClient) {
