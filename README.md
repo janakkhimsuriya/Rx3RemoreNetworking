@@ -62,7 +62,7 @@ OkHttpClient okHttpClient = new OkHttpClient.Builder()
 AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
 ```
 
-Using the Fast Android Networking with Jackson Parser
+Using the Rx3RemoreNetworking with Jackson Parser
 ```java
 // Set the JacksonParserFactory like below
 AndroidNetworking.setParserFactory(new JacksonParserFactory());
