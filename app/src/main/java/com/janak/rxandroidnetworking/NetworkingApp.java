@@ -24,6 +24,7 @@ public class NetworkingApp extends Application {
                 .addInterceptor(new CurlLoggerInterceptor()).build();
 
         AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
+
         AndroidNetworking.setParserFactory(new JacksonParserFactory());
 
         if (BuildConfig.DEBUG) {
