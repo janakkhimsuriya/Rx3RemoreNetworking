@@ -52,11 +52,15 @@ AndroidNetworking.initialize(getApplicationContext());
 Initializing it with some customization , as it uses [OkHttp](http://square.github.io/okhttp/) as networking layer, you can pass custom okHttpClient while initializing it.
 ```java
 // Adding an Network Interceptor and Curl Interceptor for Debugging purpose :
-OkHttpClient okHttpClient = new OkHttpClient() .newBuilder()
-                        .addNetworkInterceptor(new StethoInterceptor())
-                        .addInterceptor(new CurlLoggerInterceptor())
-                        .build();
-AndroidNetworking.initialize(getApplicationContext(),okHttpClient);
+OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .addNetworkInterceptor(new StethoInterceptor())
+                .readTimeout(2, TimeUnit.MINUTES)
+                .connectTimeout(5, TimeUnit.MINUTES)
+                .writeTimeout(5, TimeUnit.MINUTES)
+                .addInterceptor(new CurlLoggerInterceptor()).build();
+                
+AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
+
 ```
 
 ### Contact - Let's become friend
