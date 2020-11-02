@@ -38,7 +38,6 @@ allprojects {
 }
 
 dependencies {
-    implementation "com.squareup.okhttp3:okhttp:4.4.0"
     implementation 'com.github.janakkhimsuriya:Rx3RemoreNetworking:SNAPSHOT'
 }
 ```
