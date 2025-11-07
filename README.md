@@ -67,8 +67,3 @@ Using the Rx3RemoteNetworking with Jackson Parser
 // Set the JacksonParserFactory like below
 AndroidNetworking.setParserFactory(new JacksonParserFactory());
 ```
-
-### Contact - Let's become friend
-- [Twitter](https://twitter.com/Jashita9293)
-- [Github](https://github.com/janakkhimsuriya)
-- [Facebook](https://www.facebook.com/khimsuriya.janak)
