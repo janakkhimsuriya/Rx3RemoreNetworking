@@ -1,13 +1,13 @@
-# Rx3RemoreNetworking
+# Rx3RemoteNetworking
 
-[![](https://jitpack.io/v/janakkhimsuriya/Rx3RemoreNetworking.svg)](https://jitpack.io/#janakkhimsuriya/Rx3RemoreNetworking)
+[![](https://jitpack.io/v/janakkhimsuriya/Rx3RemoteNetworking.svg)](https://jitpack.io/#janakkhimsuriya/Rx3RemoteNetworking)
 
-### About Rx3RemoreNetworking Library
-Rx3RemoreNetworking Library is a powerful library for doing any type of networking in Android applications which is made on top of OkHttp Networking Layer.
+### About Rx3RemoteNetworking Library
+Rx3RemoteNetworking Library is a powerful library for doing any type of networking in Android applications which is made on top of OkHttp Networking Layer.
 
-Rx3RemoreNetworking Library takes care of each and everything. So you don't have to do anything, just make request and listen for the response.
+Rx3RemoteNetworking Library takes care of each and everything. So you don't have to do anything, just make request and listen for the response.
 
-### Why use Rx3RemoreNetworking ?
+### Why use Rx3RemoteNetworking ?
 * Removal of HttpClient in Android Marshmallow(Android M) made other networking libraries obsolete.
 * No other single library does each and everything like making request, downloading any type of file, uploading file, loading
   image from network in ImageView, etc. There are some libraries but they are outdated.
@@ -21,12 +21,12 @@ Rx3RemoreNetworking Library takes care of each and everything. So you don't have
 
 ## Requirements
 
-Rx3RemoreNetworking Library can be included in any Android application. 
+Rx3RemoteNetworking Library can be included in any Android application. 
 
-Rx3RemoreNetworking Library supports Android 4.1 (Jelly Bean) and later. 
+Rx3RemoteNetworking Library supports Android 4.1 (Jelly Bean) and later. 
 
 
-## Using Rx3RemoreNetworking Library in your application
+## Using Rx3RemoteNetworking Library in your application
 
 Add this in your build.gradle
 ```groovy
@@ -38,7 +38,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.janakkhimsuriya:Rx3RemoreNetworking:SNAPSHOT'
+    implementation 'com.github.janakkhimsuriya:Rx3RemoteNetworking:SNAPSHOT'
 }
 ```
 Do not forget to add internet permission in manifest if already not present
@@ -62,7 +62,7 @@ OkHttpClient okHttpClient = new OkHttpClient.Builder()
 AndroidNetworking.initialize(getApplicationContext(), okHttpClient);
 ```
 
-Using the Rx3RemoreNetworking with Jackson Parser
+Using the Rx3RemoteNetworking with Jackson Parser
 ```java
 // Set the JacksonParserFactory like below
 AndroidNetworking.setParserFactory(new JacksonParserFactory());
